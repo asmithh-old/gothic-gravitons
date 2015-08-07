@@ -5,12 +5,12 @@ content = []
 text1 = True
 text2 = True
 text3 = True
-if myimmortal:
+if text1:
     with open('text1.txt') as f:
         for line in f.readlines():
             content.append(line)
         f.close()
-if histtime:
+if text2:
     with open('text2.txt') as g:
         mystr = ''
         for line in g.readlines():
@@ -18,7 +18,7 @@ if histtime:
         for t in mystr.split('.'):
             content.append(t + '.')
         g.close()
-if soundfury:
+if text3:
     with open('text3.txt') as h:
         for line in h.readlines():
             content.append(line)
